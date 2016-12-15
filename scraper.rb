@@ -37,12 +37,4 @@ def scrape_list(url)
   end
 end
 
-term = { 
-  id: 1,
-  name: "1st Legislative Assembly",
-  start_date: '2014',
-  source: 'https://en.wikipedia.org/wiki/Legislative_Assembly_of_Montserrat',
-}
-ScraperWiki.save_sqlite([:id], term, 'terms')
-
 scrape_list('http://www.elections.ms/')
